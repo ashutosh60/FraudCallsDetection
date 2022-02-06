@@ -16,7 +16,7 @@ Please sign in to Power BI account first in order to view the report graph embed
 
 The Azure Services used are as follows:
 1. Azure Portal: This is used to create Azure Stream Analytics job in order to analyse the fraud calls from the input data. Also used to create App Service to host website. 
-2. Event Hubs: This is used to stoing the input data before analysis.
+2. Event Hubs: This is used to storing the input data before analysis.
 3. Azure Stream Analytics: Used to analyse the fraud calls from the input data. Input is taken in Event Hubs, SQL query used to detect the fradulent call data, output is sent to Power BI for plotting line chart showing the number of fraud calls at a given instant of time.
 4. Azure App Service: Used to create and host a webapp in order to display Power BI chart analysis. 
 
