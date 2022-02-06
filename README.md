@@ -18,7 +18,7 @@ The Azure Services used are as follows:
 1. Azure Portal: This is used to create Azure Stream Analytics job in order to analyse the fraud calls from the input data. Also used to create App Service to host website. 
 2. Event Hubs: This is used to storing the input data before analysis.
 3. Azure Stream Analytics: Used to analyse the fraud calls from the input data. Input is taken in Event Hubs, SQL query used to detect the fradulent call data, output is sent to Power BI for plotting line chart showing the number of fraud calls at a given instant of time.
-4. Azure App Service: Used to create and host a webapp in order to display Power BI chart analysis. 
+4. Azure App Service: Used to create and host a webapp by uploading the code from this repository on Azure app service in order to display Power BI chart analysis. 
 
 Other service used is:  Power BI: This is used as output of Azure Stream analytics job.
 
@@ -49,6 +49,8 @@ The Azure Stream Analytics job is started from the portal and the ouptut is visu
 
 ### Embedding the Power BI chart in Web application
 From the generated Power BI chart, the html tags to include this in a web app is taken and pasted into the web app building code so as to make the chart visible on the live website. But the chart is only visible if the viewer is signed in to Power BI account.
+
+Azure App Service is used to create and host a webapp by uploading the code from this repository on Azure app service in order to display Power BI chart analysis.
 
 ![Webapp chart](https://github.com/ashutosh60/FraudCallsDetection/blob/master/webapp.jpeg)
 
