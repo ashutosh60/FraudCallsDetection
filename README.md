@@ -48,9 +48,14 @@ The Azure Stream Analytics job is started from the portal and the ouptut is visu
 ![Power BI](https://github.com/ashutosh60/FraudCallsDetection/blob/master/power-bi.png)
 
 ### Embedding the Power BI chart in Web application
+
+Azure App Service is used to create and host a webapp by uploading the code from this github repository on Azure app service in order to display Power BI chart analysis.
+
+![Azure App Service](https://github.com/ashutosh60/FraudCallsDetection/blob/master/app-service.png)
+
 From the generated Power BI chart, the html tags to include this in a web app is taken and pasted into the web app building code so as to make the chart visible on the live website. But the chart is only visible if the viewer is signed in to Power BI account.
 
-Azure App Service is used to create and host a webapp by uploading the code from this repository on Azure app service in order to display Power BI chart analysis.
+The final website looks like this shown below
 
 ![Webapp chart](https://github.com/ashutosh60/FraudCallsDetection/blob/master/webapp.jpeg)
 
