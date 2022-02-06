@@ -1,6 +1,6 @@
 # Real Time Fraud Detection
 
-## Project Statement
+## Problem Statement
 Detection of fraudulent mobile-phone calls in telecommunications scenario.
 
 ## Project Description
