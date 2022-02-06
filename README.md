@@ -1,7 +1,7 @@
 # Real Time Fraud Detection
 
 ## Project Statement
-Detect fraudulent mobile-phone calls in telecommunications scenario.
+Detection of fraudulent mobile-phone calls in telecommunications scenario.
 
 ## Project Description
 This project has been built using Microsoft Azure Portal. This scenario covers the back-end components of a real-time analytics pipeline. Data flows through the scenario as follows: 
@@ -27,7 +27,11 @@ Other service used is:  Power BI: This is used as output of Azure Stream analyti
 ### Sign in to Azure Portal
 
 ### Create an Event Hub
+![Event Hubs](https://github.com/ashutosh60/FraudCallsDetection/blob/master/event-hubs.png)
+
 After creating the Event hub, the event generator is started to upload sample data by using Telcogenerator.zip file.
+
+![Telcogen](https://github.com/ashutosh60/FraudCallsDetection/blob/master/telco.png)
 
 ### Create an Azure Stream Analytics Job
 There are three parameters to be set here.
@@ -35,11 +39,18 @@ There are three parameters to be set here.
 2. Configure the output: Here the output is sent to Power BI.
 3. Write the query: The query is written according to the problem statement that is to detect the fraud calls from the input data.
 
+![Azure Stream Analytics](https://github.com/ashutosh60/FraudCallsDetection/blob/master/stream-analytics.png)
+
 ### Start the Stream Analytics Job and visualize the output
+
 The Azure Stream Analytics job is started from the portal and the ouptut is visualized on Power BI in terms of a line chart.
+
+![Power BI](https://github.com/ashutosh60/FraudCallsDetection/blob/master/power-bi.png)
 
 ### Embedding the Power BI chart in Web application
 From the generated Power BI chart, the html tags to include this in a web app is taken and pasted into the web app building code so as to make the chart visible on the live website. But the chart is only visible if the viewer is signed in to Power BI account.
+
+![Webapp chart](https://github.com/ashutosh60/FraudCallsDetection/blob/master/webapp.jpeg)
 
 ## Project URL
 https://calls-ashutosh.azurewebsites.net
