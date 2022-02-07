@@ -14,11 +14,11 @@ Then, using Azure App Service, a website  is built from the code of this reposit
 
 Please sign in to Power BI account first in order to view the report graph embedded in the website hosted on Microsoft Azure.
 
-The Azure Services used are as follows:
-1. Azure Portal: This is used to create Azure Stream Analytics job in order to analyse the fraud calls from the input data. Also used to create App Service to host website. 
-2. Event Hubs: This is used to storing the input data before analysis.
-3. Azure Stream Analytics: Used to analyse the fraud calls from the input data. Input is taken in Event Hubs, SQL query used to detect the fradulent call data, output is sent to Power BI for plotting line chart showing the number of fraud calls at a given instant of time.
-4. Azure App Service: Used to create and host a webapp by uploading the code from this repository on Azure app service in order to display Power BI chart analysis. 
+The **Azure Services** used are as follows:
+1. **Azure Portal:** This is used to create Event Hubs, Azure Stream Analytics job and also used to create App Service to host website. 
+2. **Event Hubs:** This is used to storing the input data before analysis.
+3. **Azure Stream Analytics:** Used to analyse the fraud calls from the input metadata of phone calls. Input is taken in Event Hubs, SQL query used to detect the fradulent call data, output is sent to Power BI for plotting line chart showing the number of fraud calls at a given instant of time.
+4. **Azure App Service:** Used to create and host a webapp by uploading the code from this repository on Azure app service in order to display Power BI chart analysis. 
 
 Other service used is:  Power BI: This is used as output of Azure Stream analytics job.
 
@@ -53,13 +53,16 @@ Azure App Service is used to create and host a webapp by uploading the code from
 
 ![Azure App Service](https://github.com/ashutosh60/FraudCallsDetection/blob/master/app-service.png)
 
-From the generated Power BI chart, the html tags to include this in a web app is taken and pasted into the web app building code so as to make the chart visible on the live website. But the chart is only visible if the viewer is signed in to Power BI account.
+From the generated Power BI chart, the html tags to include this in a web app is taken and pasted into the web app building code so as to make the chart visible on the live website. But the chart is only visible if the viewer is signed in to Power BI account. 
 
-The final website looks like this shown below
+If Power BI account is not signed in, then "Sign in to Power BI" will be visible instead of the actual embedded dashboard.
+
+The final website looks like this shown below:
 
 ![Webapp chart](https://github.com/ashutosh60/FraudCallsDetection/blob/master/webapp.jpeg)
 
 ## Project URL
-https://calls-ashutosh.azurewebsites.net
+This is the Project URL: https://calls-ashutosh.azurewebsites.net
 
 ## Video URL
+This is the demo video URL: https://youtu.be/artzdjVWXuE 
